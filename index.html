@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Consumer Communications Job Search</title>
+    <title>Consumer Comms | Engineering Elite Careers</title>
+    <link rel="icon" type="image/png" href="https://1drv.ms/i/c/a9f7c1e1ed4ef733/IQQpjv4M1C7bTY2EDFOvYZQtAdTThlDff6L56HTQhh_SN3k?width=64&height=64">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -16,17 +18,48 @@
               brand: {
                 orange: '#f58500',
                 blue: '#0516eb',
+                darkblue: '#030d8c',
                 yellow: '#ffdd43',
                 grey: '#515151',
+                dark: '#0a0a0a',
+                offwhite: '#fcfcfc',
               }
             },
             fontFamily: {
-              sans: ['Montserrat', 'sans-serif'],
+              sans: ['Poppins', 'sans-serif'],
             },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'scale-in': 'scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'fade-up': 'fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              scaleIn: {
+                '0%': { transform: 'scale(0.97)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+              fadeUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              }
+            }
           }
         }
       }
     </script>
+    <style>
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+      html { scroll-behavior: smooth; }
+      body { -webkit-font-smoothing: antialiased; background-color: #fcfcfc; }
+      .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+      .text-balance { text-wrap: balance; }
+      .section-spacing { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    </style>
   <script type="importmap">
 {
   "imports": {
@@ -39,7 +72,7 @@
 }
 </script>
 </head>
-  <body class="bg-gray-50 text-brand-grey font-sans antialiased">
+  <body>
     <div id="root"></div>
   </body>
 </html>
